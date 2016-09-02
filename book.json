@@ -1,4 +1,5 @@
 {
+	"root":"./_book",
   "title":"我的前端之旅",
   "description":"用 GitBook 制作的第一本电子书！",
   "author":"yiru",
