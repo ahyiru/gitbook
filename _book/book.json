@@ -1,7 +1,64 @@
 {
+	"root":"./_book",
   "title":"我的前端之旅",
   "description":"用 GitBook 制作的第一本电子书！",
   "author":"yiru",
-  "language":"zh",
-  "direction":"ltr"
+  "language":"zh-hans",
+  "direction":"ltr",
+  "links":{
+    "sidebar":{
+      "Home":"https://www.gitbook.com/"
+    }
+	},
+	"styles":{
+    "website":"styles/website.css",
+    "ebook":"styles/ebook.css",
+    "pdf":"styles/pdf.css",
+    "mobi":"styles/mobi.css",
+    "epub":"styles/epub.css"
+	},
+	"plugins":[
+    "disqus",
+    "advanced-emoji",/*emoji*/
+    "github",
+    "tbfed-pagefooter",
+    "toggle-chapters",/*左侧的章节目录可折叠 */
+    "-search",/*如果要去除自带的插件， 可以在插件名称前面加-*/
+    "search-pro",
+    "-sharing"
+	],
+	"pluginsConfig":{
+    "fontsettings":{
+      "theme":"sepia",
+      "family":"serif",
+      "size":1
+    },
+    "disqus":{
+      "shortName":"gitbookuse"
+    },
+    "search-pro":{
+      "cutWordLib":"node",
+      "defineWord":["Gitbook Use"]
+    },
+    "github":{
+      "url":"https://github.com/ahyiru"
+    },
+    "sharing":{
+      "weibo":true,
+      "facebook":true,
+      "twitter":true,
+      "google":false,
+      "instapaper":false,
+      "vk":false,
+      "all": [
+        "facebook","google","twitter","weibo","instapaper"
+      ]
+  	},
+  	/*为页面添加页脚*/
+  	"tbfed-pagefooter":{
+      "copyright":"Copyright &copy yiru 2015",
+      "modify_label":"该文件修订时间：",
+      "modify_format":"YYYY-MM-DD HH:mm:ss"
+    }
+	}
 }
